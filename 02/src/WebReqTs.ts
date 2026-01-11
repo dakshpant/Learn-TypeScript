@@ -1,5 +1,5 @@
-import axios, {AxiosResponse} from "axios"
-
+import axios from "axios"
+import type { AxiosResponse } from "axios";
 interface ToDO{
     userId: number;
     id: number;
