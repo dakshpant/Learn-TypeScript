@@ -1,4 +1,5 @@
 import './App.css'
+import { Card } from './components/Card'
 import { ChaiCard } from './components/ChaiCard'
 import ChaiList from './components/ChaiList'
 import { Counter } from './components/Counter'
@@ -34,9 +35,15 @@ function App() {
           </div>
           <div>
             <OrderForm OnSubmit={(order)=>{
-              console.log(`Placed Order`,order.name, order.cup);
+              console.log(`Placed Order`,order.name, order.cups);
               
             }}/>
+          </div>
+          <div>
+            <Card 
+            title='Chai Aur TS'
+            footer={<button>Order Now</button>}//React Node are the HTML elements which we pass using props
+            />
           </div>
     </>
   )
